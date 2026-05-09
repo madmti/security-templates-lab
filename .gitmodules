@@ -1,0 +1,9 @@
+[submodule "test-repos/juice-shop"]
+	path = test-repos/juice-shop
+	url = https://github.com/juice-shop/juice-shop
+[submodule "test-repos/pygoat"]
+	path = test-repos/pygoat
+	url = https://github.com/adeyosemanputra/pygoat.git
+[submodule "test-repos/vulhub"]
+	path = test-repos/vulhub
+	url = https://github.com/vulhub/vulhub.git
