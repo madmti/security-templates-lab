@@ -1,0 +1,5 @@
+title = "Configuracion de Git Leaks"
+
+[extend]
+useDefault = true
+
