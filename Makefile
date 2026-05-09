@@ -20,6 +20,12 @@ sast-scan:
 sast-report:
 	@cd ./sast && ./report.sh
 
+sca-scan:
+	@cd ./sca && ./scan.sh
+
+sca-report:
+	@cd ./sca && ./report.sh
+
 secret-scanning:
 	@cd ./secret-scanning && ./scan.sh
 
