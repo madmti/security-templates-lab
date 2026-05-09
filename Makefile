@@ -3,6 +3,8 @@
 help:
 	@echo "Usage: make [target]"
 	@echo "Targets:"
+	@echo "  scan                   Run all scans (SAST and Secret Scanning)"
+	@echo "  report                 Show all reports (SAST and Secret Scanning)"
 	@echo "  sast-scan              Run SAST scan"
 	@echo "  sast-report            Shows SAST report"
 	@echo "  secret-scanning        Run Secret Scanning"
