@@ -1,2 +1,1 @@
-secret-scanning/reports-git/*
-secret-scanning/reports-no-git/*
+reports/*
