@@ -9,7 +9,7 @@ REPORTS_DIR="../reports"
 show_sast_reports() {
     echo -e "${YELLOW}--- CATEGORÍA: SAST (Semgrep) ---${NC}"
 
-    files=("$REPORTS_DIR"/*.sast-fast.json)
+    files=("$REPORTS_DIR"/*.sast.json)
 
     if [ ! -e "${files[0]}" ]; then
         echo -e "No hay reportes de SAST encontrados.\n"
@@ -17,7 +17,7 @@ show_sast_reports() {
     fi
 
     for report in "${files[@]}"; do
-        repo_name=$(basename "$report" .sast-fast.json)
+        repo_name=$(basename "$report" .sast.json)
         echo -e "Repo: $repo_name"
 
         jq -c '.results[]' "$report" | while read -r result; do

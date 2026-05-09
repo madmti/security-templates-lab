@@ -18,7 +18,7 @@ scan() {
     local repo_name=$1
     local configs=$2
     local target_path=$3
-    local report_path="$REPORTS_DIR/${repo_name}.sast-fast.json"
+    local report_path="$REPORTS_DIR/${repo_name}.sast.json"
 
     read -ra CONFIG_ARRAY <<< "$configs"
 
