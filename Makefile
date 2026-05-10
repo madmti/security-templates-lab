@@ -10,9 +10,15 @@ help:
 	@echo "  secret-scanning        Run Secret Scanning"
 	@echo "  secret-scanning-report Shows Secret Scanning report"
 
-scan: secret-scanning sast-scan
+scan: secret-scanning sast-scan iac-scan sca-scan
 
-report: secret-scanning-report sast-report
+report: secret-scanning-report sast-report iac-report sca-report
+
+iac-scan:
+	@cd ./iac && ./scan.sh
+
+iac-report:
+	@cd ./iac && ./report.sh
 
 sast-scan:
 	@cd ./sast && ./scan.sh
